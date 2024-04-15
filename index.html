@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z24dHFa0Ag18tIQaM7H2Wr2aBauS2Np6cO+Xjq" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <div class="max-w-full h-screen flex justify-center items-center">
+        <div class="max-w-md mx-auto ">
+            <h1 class="text-2xl font-bold text-left text-gray-800 mb-12">Welcome Back</h1>
+
+            
+                <div class="mb-8">
+                    <input type="email" name="email" id="email"
+                        class="bg-gray-100  text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 dark:bg-gray-600  dark:placeholder-gray-400 dark:text-white"
+                        placeholder="Email" />
+                </div>
+                <div class="mb-8 relative">
+                    <input type="password" name="email" id="email"
+                        class="bg-gray-100 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 pr-10 dark:bg-gray-600 dark:placeholder-gray-400 dark:text-white"
+                        placeholder="Password" />
+                        <!-- <svg width="20px" height="20px" viewBox="0 0 76 76" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" enable-background="new 0 0 76.00 76.00" xml:space="preserve">
+                            <path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 38,33.1538C 40.6765,33.1538 42.8462,35.3235 42.8462,38C 42.8462,40.6765 40.6765,42.8461 38,42.8461C 35.3235,42.8461 33.1539,40.6765 33.1539,38C 33.1539,35.3235 35.3236,33.1538 38,33.1538 Z M 38,25.0769C 49.3077,25.0769 59,33.1538 59,38C 59,42.8461 49.3077,50.9231 38,50.9231C 26.6923,50.9231 17,42.8461 17,38C 17,33.1538 26.6923,25.0769 38,25.0769 Z M 38,29.1154C 33.0932,29.1154 29.1154,33.0932 29.1154,38C 29.1154,42.9068 33.0932,46.8846 38,46.8846C 42.9068,46.8846 46.8846,42.9068 46.8846,38C 46.8846,33.0932 42.9068,29.1154 38,29.1154 Z "/>
+                        </svg> -->
+                </div>
+                <div class="mb-4 flex items-center">
+                <a href="#" class="text-gray-500 underline">Forgot your password?</a></label>
+                </div>
+                <div class="mt-80"></div>
+                <a href="graph.html">
+                <button type="submit"
+                    class="w-full bg-indigo-300 text-white rounded-lg py-3 px-6 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Sign In</button>
+                </a>
+                
+
+            <div class="flex items-center mt-8 mb-8">
+                <div class="w-full border-t border-gray-400"></div>
+                <div class="mx-4 text-lg text-gray-600">or</div>
+                <div class="w-full border-t border-gray-400"></div>
+            </div>
+
+            <div class="flex justify-center space-x-8">
+                <button class="border border-black text-white px-4 py-3 rounded-lg flex items-center space-x-2">
+                    <svg width="24px" height="30px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M30.0014 16.3109C30.0014 15.1598 29.9061 14.3198 29.6998 13.4487H16.2871V18.6442H24.1601C24.0014 19.9354 23.1442 21.8798 21.2394 23.1864L21.2127 23.3604L25.4536 26.58L25.7474 26.6087C28.4458 24.1665 30.0014 20.5731 30.0014 16.3109Z"
+                            fill="#4285F4" />
+                        <path
+                            d="M16.2863 29.9998C20.1434 29.9998 23.3814 28.7553 25.7466 26.6086L21.2386 23.1863C20.0323 24.0108 18.4132 24.5863 16.2863 24.5863C12.5086 24.5863 9.30225 22.1441 8.15929 18.7686L7.99176 18.7825L3.58208 22.127L3.52441 22.2841C5.87359 26.8574 10.699 29.9998 16.2863 29.9998Z"
+                            fill="#34A853" />
+                        <path
+                            d="M8.15964 18.769C7.85806 17.8979 7.68352 16.9645 7.68352 16.0001C7.68352 15.0356 7.85806 14.1023 8.14377 13.2312L8.13578 13.0456L3.67083 9.64746L3.52475 9.71556C2.55654 11.6134 2.00098 13.7445 2.00098 16.0001C2.00098 18.2556 2.55654 20.3867 3.52475 22.2845L8.15964 18.769Z"
+                            fill="#FBBC05" />
+                        <path
+                            d="M16.2864 7.4133C18.9689 7.4133 20.7784 8.54885 21.8102 9.4978L25.8419 5.64C23.3658 3.38445 20.1435 2 16.2864 2C10.699 2 5.8736 5.1422 3.52441 9.71549L8.14345 13.2311C9.30229 9.85555 12.5086 7.4133 16.2864 7.4133Z"
+                            fill="#EB4335" />
+                    </svg>
+                </button>
+                <button class="border border-black text-white px-4 py-3 rounded-lg flex items-center space-x-2">
+                    <svg fill="#1877F2" width="24px" height="30px" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M15.1742424,5.3203125 L17,5.3203125 L17,2.140625 C16.6856061,2.09765625 15.6022727,2 14.3409091,2 C11.7083333,2 9.90530303,3.65625 9.90530303,6.69921875 L9.90530303,9.5 L7,9.5 L7,13.0546875 L9.90530303,13.0546875 L9.90530303,22 L13.4659091,22 L13.4659091,13.0546875 L16.2537879,13.0546875 L16.6969697,9.5 L13.4659091,9.5 L13.4659091,7.05078125 C13.4659091,6.0234375 13.7424242,5.3203125 15.1742424,5.3203125 Z" />
+                    </svg>
+            </div>
+
+            <div class="text-center mt-8">
+                <p class="text-gray-600 text-lg">Don't have an Account? <a href="signup.html"
+                        class="text-blue-600 underline">Create an accont</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
